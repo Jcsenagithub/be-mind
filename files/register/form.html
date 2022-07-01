@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>formulario</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.js">
+    <script src="form.js"></script>
+    <link rel="shortcut icon" href="../favicon/logo-removebg-preview.png" type="image/x-icon">
+
+    <nav id="main-menu" class="menu">
+        <div>
+            <a href="/Be-Mind/index.html">
+                <p>INICIO</p>
+                <img class="inicio" src="../iconos gif/boton-inicio-100px.png" alt width="65" height="65">
+            </a>
+        </div>
+        <br>
+        <div>
+            <a href="/Be-Mind/index.html">
+                <p>AYUDA</p>
+                <img class="dudas" src="../iconos gif/dudas.png" alt width="65" height="65">
+            </a>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <hr>
+    <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
+    <h5>Nesciunt, magni ratione nam, libero atque at ab dolorum alias</h5>
+    <h5>fuga itaque tempora obcaecati,</h5>
+    <h5>vel quisquam quibusdam corporis impedit sequi optio?</h5>
+
+    <article>
+        <form action="reg.php" class="formulario">
+            <center>
+                <h1>REGISTRO</h1>
+            </center>
+            <input type="text" id="name" name="name" class="formulario__input" placeholder="Nombres" required>
+            <input type="text" id="surname" name="surname" class="formulario__input" placeholder="Apellidos" required>
+
+            <center>
+                <input type="radio" id="genero" name="genero" required> Masculino
+                <input type="radio" id="genero" name="genero" required> Femenino
+
+                <select name="option" id="option" required>
+            <option value="1">CC</option>
+            <option value="2">EX</option>
+            <option value="3">PEP</option>  
+            </select>
+            </center>
+
+            <br>
+
+            <input type="text" id="documento" name="document" class="formulario__input" placeholder="Documento" required>
+            <input type="text" id="correo" name="email" class="formulario__input" placeholder="Correo Electrònico" required>
+            <input type="text" id="password" name="password" class="formulario__input" placeholder="Contraseña" required minlength="8">
+            <input type="text" id="telefono" name="phone" class="formulario__input" placeholder="Telèfono">
+            <input type="text" id="domicilio" name="home" class="formulario__input" placeholder="Domicilio Opcional">
+            <center>
+                <button type="submit" name="register">
+            <span></span>
+                <span></span>
+            <span>Enviar</span>
+            </button>
+            </center>
+        </form>
+    </article>
+    <php include( "register.php"); ?>
+    </php>
+
+    <footer>
+        <h4>Derechos Reservados Be-Mind</h4>
+        <h4>Be-Mind</h4>
+    </footer>
+</body>
+
+</html>
